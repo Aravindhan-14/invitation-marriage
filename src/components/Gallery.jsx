@@ -11,8 +11,9 @@ const tiles = [
   { name: 'vilakku', ta: 'குத்து விளக்கு', en: 'Sacred Lamp', span: 'tall' },
   { name: 'wedding-ritual', ta: 'திருமணச் சடங்கு', en: 'Wedding Rituals', span: 'wide' },
   { name: 'marigold', ta: 'மலர் மாலை', en: 'Marigold Garland' },
-  { name: 'kolam', ta: 'கோலம்', en: 'Kolam' },
-  { name: 'sculptures-detail', ta: 'சிற்பக் கலை', en: 'Temple Sculptures', span: 'wide-sm' },
+  { name: 'thaali', ta: 'திருமாங்கல்யம்', en: 'Sacred Thaali' },
+  { name: 'ring-exchange', ta: 'மோதிரம் மாற்றுதல்', en: 'Ring Exchange', span: 'wide-sm' },
+  { name: 'holding-hands', ta: 'கைகோர்த்து', en: 'Hand in Hand', span: 'full' },
 ];
 
 export default function Gallery() {
@@ -33,11 +34,11 @@ export default function Gallery() {
       <ul className="gallery-grid">
         {tiles.map((t, i) => (
           <Reveal as="li" key={t.name} className={`g-tile ${t.span ? `is-${t.span}` : ''}`} delay={(i % 3) * 0.1}>
-            <button type="button" className="g-btn" onClick={() => setOpen(t)} aria-label={`${t.ta} — ${t.en}: பெரிதாகப் பார்க்க`}>
+            <button type="button" className="g-btn" onClick={() => setOpen(t)} aria-label={`${t.en} — ${t.ta}: பெரிதாகப் பார்க்க`}>
               <Photo name={t.name} alt={t.en} />
               <span className="g-caption">
-                <span className="g-ta">{t.ta}</span>
                 <span className="g-en">{t.en}</span>
+                <span className="g-ta">{t.ta}</span>
               </span>
             </button>
           </Reveal>
@@ -66,7 +67,7 @@ export default function Gallery() {
               >
                 <Photo name={open.name} alt={open.en} />
                 <figcaption>
-                  <strong>{open.ta}</strong> · {open.en}
+                  <strong>{open.en}</strong> · {open.ta}
                   <small>Photo: {photo(open.name)?.author} · {photo(open.name)?.license}</small>
                 </figcaption>
               </motion.figure>

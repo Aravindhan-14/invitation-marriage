@@ -1,4 +1,5 @@
 import wedding from '../config/wedding';
+import { asset } from './asset';
 
 /**
  * All sound is created only after a user gesture (browser autoplay rules).
@@ -68,7 +69,7 @@ export function startAmbient() {
   const vol = wedding.audio.ambientVolume ?? 0.35;
 
   if (src !== 'synth') {
-    const el = new Audio(src);
+    const el = new Audio(asset(src));
     el.loop = true;
     el.volume = vol;
     el.muted = muted;

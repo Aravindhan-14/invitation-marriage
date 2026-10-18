@@ -19,26 +19,26 @@ const wedding = {
 
   groom: {
     initial: 'S.',
-    initialTa: 'எஸ்.',
+    initialTa: 'S.',
     name: 'Karthikeyan',
     nameTa: 'கார்த்திகேயன்',
     degree: 'M.Com.',
     // VERIFY: printed as the groom's family on the card.
-    family: { label: 'Family', labelTa: 'குடும்பத்தினர்', members: ['S. Saravanan', 'S. Chitra'], membersTa: ['திரு. எஸ். சரவணன்', 'திருமதி. எஸ். சித்ரா'] },
+    family: { label: 'Family', labelTa: 'குடும்பத்தினர்', members: ['S. Saravanan', 'S. Chitra'], membersTa: ['திரு. S. சரவணன்', 'திருமதி. S. சித்ரா'] },
     profession: '',
-    photo: null, // e.g. '/images/groom.webp'
+    photo: 'images/photos/groom.jpeg',
   },
 
   bride: {
     initial: 'K.',
-    initialTa: 'கே.',
+    initialTa: 'K.',
     name: 'Deepika',
     nameTa: 'தீபிகா',
     degree: 'B.Com.',
     // VERIFY: printed as the bride's family on the card.
-    family: { label: 'Family', labelTa: 'குடும்பத்தினர்', members: ['N. Kanthasamy', 'K. Nanthini'], membersTa: ['திரு. என். கந்தசாமி', 'திருமதி. கே. நந்தினி'] },
+    family: { label: 'Family', labelTa: 'குடும்பத்தினர்', members: ['N. Kanthasamy', 'K. Nanthini'], membersTa: ['திரு. N. கந்தசாமி', 'திருமதி. K. நந்தினி'] },
     profession: '',
-    photo: null, // e.g. '/images/bride.webp'
+    photo: 'images/photos/bride.jpeg',
   },
 
   date: {
@@ -57,7 +57,7 @@ const wedding = {
 
   // VERIFY: timings as printed on the invitation.
   schedule: [
-    { id: 'wedding', labelTa: 'திருமண முகூர்த்தம்', labelEn: 'Wedding', start: '2026-11-15T07:00:00+05:30', end: '2026-11-15T08:30:00+05:30', timeTa: 'காலை 7:00 மணி முதல் 8:30 மணி வரை', timeEn: '7:00 AM – 8:30 AM' },
+    { id: 'wedding', labelTa: 'திருமண சுபமுகூர்த்தம்', labelEn: 'Wedding', start: '2026-11-15T07:00:00+05:30', end: '2026-11-15T08:30:00+05:30', timeTa: 'காலை 7:00 மணி முதல் 8:30 மணி வரை', timeEn: '7:00 AM – 8:30 AM' },
     { id: 'muhurtham', labelTa: 'திருமண வரவேற்பு', labelEn: 'Reception', start: '2026-11-15T08:30:00+05:30', end: '2026-11-15T10:30:00+05:30', timeTa: 'காலை 8:30 மணி முதல் 10:30 மணி வரை', timeEn: '8:30 AM – 10:30 AM' },
   ],
 
@@ -65,17 +65,17 @@ const wedding = {
     nameTa: 'செட்டிநாடு பேலஸ் மண்டபம்',
     nameEn: 'Chettinad Palace Mahal',
     // VERIFY: address lines from the card.
-    addressTa: ['கொல்லம்பாளையம்  ', 'ஈரோடு - 2'],
-    addressEn: 'Kollampalayam, Erode - 2, Tamil Nadu',
+    addressTa: ['ஆஸ்ரம் பள்ளி அருகில்,', 'கொல்லம்பாளையம் பைபாஸ்,', 'ஈரோடு'],
+    addressEn: 'Near Ashram School, Kollampalayam Bypass, Erode, Tamil Nadu',
     // A *search* URL — no invented coordinates. Replace with the exact
     // "Share → Copy link" URL from Google Maps once you have it.
-    mapsUrl: 'https://www.google.com/maps/search/?api=1&query=' + encodeURIComponent('Chettinad Palace Mahal Kollampalayam Erode'),
+    mapsUrl: 'https://www.google.com/maps/search/?api=1&query=' + encodeURIComponent('Chettinad Palace Mahal Kollampalayam Bypass Erode'),
   },
 
   // Tap-to-call numbers shown on the venue card. Section stays hidden while empty.
   // phone: digits with country code, e.g. '+919876543210'.
   contacts: [
-    { nameTa: 'எஸ். கார்த்திகேயன்', relationTa: 'மணமகன்', phone: '+919585609970' },
+    { nameTa: 'S. கார்த்திகேயன்', relationTa: 'மணமகன்', phone: '+919585609970' },
   ],
 
   rsvp: {
@@ -104,8 +104,8 @@ const wedding = {
 
   audio: {
     // 'synth' = gentle generated drone; a path like 'audio/ambient.mp3'; or null for none.
-    ambient: 'synth',
-    ambientVolume: 0.35,
+    ambient: 'audio/wedding-song.mp3',
+    ambientVolume: 0.6,
   },
 };
 

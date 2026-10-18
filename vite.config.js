@@ -5,4 +5,9 @@ import react from '@vitejs/plugin-react';
 export default defineConfig({
   plugins: [react()],
   base: './',
+  server: {
+    // Windows locks image/audio files while they are open or being copied
+    // (EBUSY), which crashes the file watcher — these never need hot reload.
+    watch: { ignored: ['**/public/images/**', '**/public/audio/**', '**/dist/**'] },
+  },
 });

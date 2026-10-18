@@ -64,16 +64,6 @@ const photoCredits = [
     "source": "https://commons.wikimedia.org/wiki/File:Madurai_Meenakshi_Amman_Temple_Gopuram_view.jpg"
   },
   {
-    "file": "images/photos/sculptures-detail.webp",
-    "label": "Gopuram sculptures",
-    "w": 900,
-    "h": 1203,
-    "author": "Keerthika Ram",
-    "license": "CC BY-SA 3.0",
-    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
-    "source": "https://commons.wikimedia.org/wiki/File:Meenakshi_Amman_Temple_Kopuram.JPG"
-  },
-  {
     "file": "images/photos/vilakku.webp",
     "label": "Lit brass lamp",
     "w": 1200,
@@ -94,16 +84,6 @@ const photoCredits = [
     "source": "https://commons.wikimedia.org/wiki/File:Marigold_Flowers_as_garland.jpg"
   },
   {
-    "file": "images/photos/kolam.webp",
-    "label": "Kolam",
-    "w": 900,
-    "h": 675,
-    "author": "Kmurugesan",
-    "license": "CC BY-SA 4.0",
-    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-    "source": "https://commons.wikimedia.org/wiki/File:Rangoli_Kolam.jpg"
-  },
-  {
     "file": "images/photos/wedding-ritual.webp",
     "label": "Wedding ceremony in Tamil Nadu",
     "w": 1000,
@@ -112,6 +92,36 @@ const photoCredits = [
     "license": "CC BY-SA 4.0",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
     "source": "https://commons.wikimedia.org/wiki/File:Wedding_ceremony_in_Tamil_Nadu_03.jpg"
+  },
+  {
+    "file": "images/photos/thaali.webp",
+    "label": "Thaali on a coconut with jasmine",
+    "w": 1280,
+    "h": 914,
+    "author": "Manivannansrm",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Thali.jpg"
+  },
+  {
+    "file": "images/photos/ring-exchange.webp",
+    "label": "Exchange of wedding rings",
+    "w": 1280,
+    "h": 853,
+    "author": "Jubair1985",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Exchange_Wedding_Ring.jpg"
+  },
+  {
+    "file": "images/photos/holding-hands.webp",
+    "label": "Bride and groom's hands together (cropped)",
+    "w": 1280,
+    "h": 800,
+    "author": "Iambromount",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Hands_Together.jpg"
   }
 ];
 
